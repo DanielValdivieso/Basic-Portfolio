@@ -172,25 +172,29 @@ input[type=submit]:hover {
     .col-25, .col-75, input[type=submit] {
         width: 100%;
         margin-top: 0;
-}
-
-div.gallery {
-    margin: 0px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-    background-color: #4aaaa5;}
+    }
+    /*These should be floated left*/
+    /*Remember to position relative*/
+    /*Don't forget to clear parent*/
+    div.gallery {
+        margin: 0px;
+        border: 1px solid #ccc;
+        clear: relative;
+        width: 180px;
+    }
+    div.gallery:hover {
+        border: 1px solid #777;
+        float: left;
+    }
+    div.gallery img {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    /*This should be positino absolute*/
+    div.desc {
+        padding: 15px;
+        text-align: center;
+        background-color: #4aaaa5;
+        position: absolute;
+    }
