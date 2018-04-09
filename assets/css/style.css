@@ -85,7 +85,14 @@ img {
 #division {
     background-color: #ffffff;
     padding: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
+    width: 960px;
+}
+
+#division2 {
+    background-color: #ffffff;
+    padding: 20px;
+   padding-bottom: 50%;
     width: 960px;
 }
 
@@ -167,30 +174,38 @@ input[type=submit]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    /*These should be floated left*/
-    /*Remember to position relative*/
-    /*Don't forget to clear parent*/
-    div.gallery {
-        margin: 0px 5px;
-        height: 200px;
-        position: relative;
-        float: left;
-    }
-    div.gallery img {
-        width: 100%;
-        height: auto;
-        float: left;
 
-    }
-    /*This should be positino absolute*/
-    div.desc {
-        padding: 15px;
-        text-align: center;
-        background-color: #4aaaa5;
-        color: #ffffff;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        padding-block-end: 0px
-    }
+/*These should be floated left*/
+
+/*Remember to position relative*/
+
+/*Don't forget to clear parent*/
+
+div.gallery {
+    margin: 0px 5px;
+    height: 200px;
+    position: relative;
+    float: left;
+    display: table;
+    overflow: hidden;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+/*This should be positino absolute*/
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    width: 100%;
+    padding-block-end: 0px;
+}
